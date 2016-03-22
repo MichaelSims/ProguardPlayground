@@ -10,6 +10,7 @@ android {
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
     }
     buildTypes {
         debug {
@@ -43,5 +44,6 @@ dependencies {
     compile 'com.fasterxml.jackson.core:jackson-annotations:2.6.3',
             'com.fasterxml.jackson.core:jackson-core:2.6.3',
             'com.fasterxml.jackson.core:jackson-databind:2.6.3',
-            'com.google.guava:guava:15.0'
+            'com.google.guava:guava:15.0',
+            'com.android.support:multidex:1.0.1'
 }
