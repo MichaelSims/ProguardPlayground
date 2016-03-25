@@ -19,8 +19,13 @@
 -dontobfuscate
 -dontoptimize
 
+-keepattributes *Annotation*, EnclosingMethod, Signature, InnerClasses
+
 # Suppress various harmless notes we get because Android
 -dontnote android.net.http.**
 -dontnote org.apache.http.**
 -dontnote **ILicensingService
 -dontnote android.support.**
+
+-keep class com.example.msims.proguardplayground.Component { *; }
+-keep class com.example.msims.proguardplayground.SomeAnnotation
