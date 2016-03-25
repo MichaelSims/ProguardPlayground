@@ -43,3 +43,9 @@ dependencies {
     compile 'com.android.support:design:23.2.1'
     compile 'com.android.support:multidex:1.0.1'
 }
+
+tasks.whenTaskAdded { task ->
+    if (task.name.startsWith("transformClassesWithMultidexlistFor")) {
+        task.logging.level = LogLevel.ERROR
+    }
+}
