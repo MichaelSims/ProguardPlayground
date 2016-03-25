@@ -15,3 +15,12 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
+
+-dontobfuscate
+-dontoptimize
+
+# Suppress various harmless notes we get because Android
+-dontnote android.net.http.**
+-dontnote org.apache.http.**
+-dontnote **ILicensingService
+-dontnote android.support.**
