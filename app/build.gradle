@@ -41,9 +41,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.2.1'
     //noinspection GradleDependency
     compile 'com.android.support:design:23.2.1'
-    compile 'com.fasterxml.jackson.core:jackson-annotations:2.6.3',
-            'com.fasterxml.jackson.core:jackson-core:2.6.3',
-            'com.fasterxml.jackson.core:jackson-databind:2.6.3',
-            'com.google.guava:guava:15.0',
-            'com.android.support:multidex:1.0.1'
+    compile 'com.android.support:multidex:1.0.1'
 }
